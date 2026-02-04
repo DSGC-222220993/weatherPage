@@ -1,10 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample HTML Page</title>
+    <title>Weather App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>      </body>
+
+<body>  
+    <main class="weather-container">
+       <h1 class="app-title">Weather App</h1>
+
+       <div class="search-section">
+            <input type="text" id="city-input" placeholder="Enter city name" />
+            <button id="search-button">Search</button>
+        </div>
+
+        <div class="weather-display">
+            <h2 id="city-name">City Name</h2>
+            <p id="temperature">Temperature: --°C</p>
+            <p id="description">Description: --</p>
+            <p id="humidity">Humidity: --%</p>
+            <p id="wind-speed">Wind Speed: -- km/h</p>
+        </div>
+
+        <p id="message" class="message"></p>
+    </main>
+    <script src="script.js"></script>
+</body>
 </html>
