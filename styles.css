@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #e0eafc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #cfdef3, #e0eafc);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #cfdef3, #e0eafc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 90%;
+    max-width: 350px;
+}
+
+h1 {
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #1a4f7a;
+}
+
+.search-section{
+    margin-bottom: 20px;
+    display: flex;
+    gap: 8px;
+}
+
+.search-section input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #1a4f7a;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.search-section button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #2193b0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.weather-info img {
+    width: 100px;
+    height: 100px;
+}
+
+#temperature {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1a4f7a;
+}
+
+.message {
+    color: #ff0000;
+    margin-top: 10px;
+    font-weight: 0.9rem;
+}
