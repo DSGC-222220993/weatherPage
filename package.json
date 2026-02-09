@@ -1,0 +1,27 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DSGC-222220993/weatherPage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/DSGC-222220993/weatherPage/issues"
+  },
+  "homepage": "https://github.com/DSGC-222220993/weatherPage#readme",
+  "dependencies": {
+    "dotenv": "^17.2.4",
+    "express": "^4.18.2",
+    "node-fetch": "^2.7.0"
+  }
+}
