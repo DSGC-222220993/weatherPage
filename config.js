@@ -1,0 +1,3 @@
+window.ENV = {
+  WEATHER_API_KEY: "c24f4dd6390f2e981bd58058d6275a10"
+};
