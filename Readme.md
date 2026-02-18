@@ -1,4 +1,4 @@
-# Weather App - Gemini Edition
+# Weather App 
 
 Una aplicación de clima limpia y responsiva que utiliza la API de **OpenWeatherMap** para proporcionar datos meteorológicos en tiempo real y pronósticos para los próximos 5 días.
 
@@ -22,7 +22,8 @@ Sigue estos pasos para tener el proyecto funcionando en tu computadora:
 ### 2. Clonar o Descargar
 Descarga los archivos del proyecto o clona el repositorio:
 
----
+---<img width="630" height="286" alt="image" src="https://github.com/user-attachments/assets/4c9a480b-b0e6-47e1-831d-a06b0f1c6b84" />
+
 
 ## Configuración de Seguridad
 Este proyecto utiliza una API Key para obtener datos meteorológicos. Por seguridad:
