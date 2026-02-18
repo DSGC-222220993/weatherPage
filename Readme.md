@@ -1,12 +1,21 @@
-# Weather App - Gemini Edition
+# Weather App 
 
 Una aplicación de clima limpia y responsiva que utiliza la API de **OpenWeatherMap** para proporcionar datos meteorológicos en tiempo real y pronósticos para los próximos 5 días.
 
 ## Características principales
 * **Búsqueda Inteligente**: Sugerencias de ciudades en tiempo real mientras escribes.
+* 
+<img width="592" height="527" alt="image" src="https://github.com/user-attachments/assets/6e3324d7-325d-4aad-b2d9-3d64a9f23799" />
+
 * **Persistencia de Datos**: Gracias al uso de `localStorage`, la app recuerda tu última búsqueda y tus ciudades favoritas incluso después de cerrar el navegador.
 * **Sistema de Favoritos**: Guarda tus ciudades preferidas para un acceso rápido con un solo clic.
+* 
+<img width="545" height="241" alt="image" src="https://github.com/user-attachments/assets/762a7076-41e8-42f0-bc6d-fe59172c4737" />
+
 * **Recomendaciones Dinámicas**: Consejos personalizados según el estado del clima (lluvia, sol, nieve).
+* 
+<img width="587" height="779" alt="image" src="https://github.com/user-attachments/assets/55f29537-c6ec-493f-87ab-28f0fd4b5ce4" />
+
 * **Resiliencia (Circuit Breaker)**: Sistema de reintentos y bloqueo temporal ante fallos de conexión para proteger la integridad de la app.
 
 ---
@@ -22,7 +31,6 @@ Sigue estos pasos para tener el proyecto funcionando en tu computadora:
 ### 2. Clonar o Descargar
 Descarga los archivos del proyecto o clona el repositorio:
 
----
 
 ## Configuración de Seguridad
 Este proyecto utiliza una API Key para obtener datos meteorológicos. Por seguridad:
