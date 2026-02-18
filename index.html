@@ -18,13 +18,15 @@
             <button type="submit">Search</button>
         </form>
 
-        <section id="weatherCard" class="card hidden">
-            <h2 id="cityName"></h2>
+        <section id="weatherCard" class="weather hidden">
+            <h2 id="cityName">City</h2>
             <img id="weatherIcon" alt="weather-icon">
             <p id="temperature">-- °C</p>
             <p id="description">Description: --</p>
-            <p>Humedad: <span id="humidity">--</span>%</p>
-            <p>Viento: <span id="wind">--</span> km/h</p>
+            <div class="details">
+                <span>Humidity: <span id="humidity">--</span>%</span>
+                <span>Viento: <span id="wind">--</span> km/h</span>
+            </div>
         </section>
 
         <p id="status" class="status"></p>
