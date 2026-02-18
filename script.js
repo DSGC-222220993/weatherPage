@@ -20,7 +20,7 @@ let failures = 0;
 let circuitOpen = false;
 let circuitTimeout = null;
 
-const API_KEY = window.ENV?.WEATHER_API_KEY || "";
+const API_KEY = (window.ENV && window.ENV.WEATHER_API_KEY) ? window.ENV.WEATHER_API_KEY : "";
 
 // --- CARGA INICIAL (UNIFICADA) ---
 document.addEventListener("DOMContentLoaded", () => {
