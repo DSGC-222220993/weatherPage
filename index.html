@@ -12,27 +12,63 @@
 <body>  
     <main class="app">
         <h1>Weather App</h1>
+        <img src="img/ic_weather.png" alt="weather-icon" class="header-icon">
 
-        <form id="search-form">
-            <input type="text" id="city-input" placeholder="Search for a city..." required/>
+        <form id="search-form" style="position: relative;"> 
+            <div class="search-wrapper">
+                <input type="text" id="city-input" placeholder="Search for a city..." required autocomplete="off"/>
+                <div id="suggestions-container" class="suggestions-list"></div>
+            </div>
             <button type="submit">Search</button>
         </form>
 
+        <section id="suggestionsCard" class="weather">
+            <h3>Suggested Cities</h3>
+            <div id="quickSuggestions" class="favorites-grid">
+                <span class="fav-item" onclick="getWeather('Tokyo')">Tokyo</span>
+                <span class="fav-item" onclick="getWeather('Paris')">Paris</span>
+                <span class="fav-item" onclick="getWeather('New York')">New York</span>
+                <span class="fav-item" onclick="getWeather('London')">London</span>
+            </div>
+        </section>
+
         <section id="weatherCard" class="weather hidden">
-            <h2 id="cityName">City</h2>
+            <div class="card-header">
+                <h2 id="cityName">City</h2>
+                <img id="favBtn" src="img/ic_unfavorite.png" alt="fav" class="fav-icon">
+            </div>
+            
             <img id="weatherIcon" alt="weather-icon">
             <p id="temperature">-- °C</p>
             <p id="description">Description: --</p>
+            
+            <div id="recommendation" class="recommendation-box"></div>
+            
             <div class="details">
                 <span>Humidity: <span id="humidity">--</span>%</span>
-                <span>Viento: <span id="wind">--</span> km/h</span>
+                <span>Wind: <span id="wind">--</span> km/h</span>
             </div>
+        </section>
+
+        <section id="forecastCard" class="weather hidden">
+            <div class="forecast-inner-card">
+            <h3>5-Day Forecast</h3>
+            <div id="forecastContainer" class="forecast-grid">
+                </div>
+            </div>
+        </section>
+        
+        <section id="favoritesCard" class="weather">
+            <h3>Favorites</h3>
+            <div id="favoritesList" class="favorites-grid">
+                </div>
         </section>
 
         <p id="status" class="status"></p>
 
     </main>
 
+    <script src="config.js"></script>
     <script src="script.js"></script>
 
 </body>
