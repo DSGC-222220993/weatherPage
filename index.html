@@ -14,19 +14,17 @@
         <h1>Weather App</h1>
 
         <form id="search-form">
-            <input type="text" id="city-input" placeholder="Search for a city..." required>
+            <input type="text" id="city-input" placeholder="Search for a city..." required/>
             <button type="submit">Search</button>
         </form>
 
-        <section id="weather-card" class="weather-hidden">
-            <h2 id="city-name"></h2>
-            <img id="weather-icon" src="" alt="weather-icon">
-            <p id="temperature"></p>
+        <section id="weatherCard" class="card hidden">
+            <h2 id="cityName"></h2>
+            <img id="weatherIcon" alt="weather-icon">
+            <p id="temperature">-- °C</p>
             <p id="description">Description: --</p>
-                <div class="details">
-                    <span id="humidity"></span>
-                    <span id="wind-speed"></span>
-                </div>
+            <p>Humedad: <span id="humidity">--</span>%</p>
+            <p>Viento: <span id="wind">--</span> km/h</p>
         </section>
 
         <p id="status" class="status"></p>
